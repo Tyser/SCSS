@@ -1,0 +1,12 @@
+@mixin center () {
+    margin: auto;
+    float: none;
+}
+
+@mixin clearfix () {
+    &::before, &::after {
+        content: "";
+        display: table;
+        width: 100%; 
+    }
+}

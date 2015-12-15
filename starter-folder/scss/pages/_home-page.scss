@@ -1,0 +1,53 @@
+// Home Page SCSS
+
+#home-page {
+
+	h1 {
+		color: $header;
+		font-size: 25px;
+		padding-top: 10px;
+	}
+}// #home-page
+
+	img {
+		display: block;
+		float: left;
+		border: outset 3px #FFCC99;
+	}
+	
+	footer {
+		margin-top: 50px;
+		padding-left: 10px;
+		border: outset 5px #FDB6FF;
+		border-radius: 1.5em;
+	}
+	
+	p {
+		color: $text;
+	}
+	
+	.thumbnails {
+		width: 100%;
+		height: 200px;
+		img {
+			width: 200px;
+			margin-right: 38px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	.col-1, .col-2 {
+		width: 45%;
+		float: left;
+	}
+	
+	.col-1 {
+		margin-right: 9.5%;
+	}
+	
+	.row {
+		@include clearfix;
+	}
+	

@@ -1,0 +1,50 @@
+// Header SCSS
+
+#header {
+
+    nav {
+    	float: right;
+		
+    }
+}// #header
+
+ nav {
+		ul {
+			li {
+				float: left;
+				color: $nav;
+				padding: 1px;
+				list-style-type: none;
+				border: groove 5px #FFC7ED;
+				border-radius: 10px;
+				margin-left: 5px;
+				&.active {
+					a {
+						color: #ffffff;
+					}
+					background-color: #3366CC;
+				}
+		    }
+			li:hover {
+				background-color: #FFCC99;
+			}
+			a	{
+				text-decoration: none;
+				color: #000;
+			}
+		}
+    }
+
+.hero_image {
+	width: 100%;
+	img {
+		@include center;
+	}
+}
+
+#footer {
+	width: 400px;
+	@include center;
+	
+	
+}
